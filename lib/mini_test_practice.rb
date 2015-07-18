@@ -14,5 +14,13 @@ module MiniTestPractice
       (value.to_s.size) > 2 && (value.to_s.size) < 9
     end
 
+    def divide(value1, value2)
+      begin
+        value1 / value2
+      rescue
+        puts "do not divide by zero"
+      end
+    end
+
   end
 end

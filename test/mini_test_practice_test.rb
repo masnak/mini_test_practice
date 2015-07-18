@@ -26,8 +26,14 @@ class MiniTestPracticeTest < Minitest::Test
 
   def test_enough_length?
     assert_equal true, @main.enough_length?(400)
+    assert_equal false, @main.enough_length?(20)
+    assert_equal false, @main.enough_length?(2)
   end
 
+  def test_divide
+    assert_equal 5, @main.divide(20, 0)
+    assert_equal 5, @main.divide(2000, 400)
+  end
 
 
 end
