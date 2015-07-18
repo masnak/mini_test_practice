@@ -18,7 +18,7 @@ module MiniTestPractice
       begin
         value1 / value2
       rescue
-        puts "do not divide by zero"
+        puts "Do not divide by zero"
       end
     end
 
